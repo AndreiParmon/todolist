@@ -20,4 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('core/', include('core.urls')),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('oauth/', include('social_django.urls', namespace='social')),
+    # path('social-auth/', include('social_django.urls', namespace='social')),
 ]
